@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick-list</title>
+  <link rel="stylesheet" href="Styles/index.css">
+</head>
+<body>
+  <header class="header margin">
+    <div class="logo-box desktop-only">
+      <img src="Assets/Images/logo.svg" alt="">
+    </div>
+
+    <div class="header-back">
+      <a href="#">
+        <img src="Assets/Icons/back buttom.svg" alt="Voltar">
+      </a>
+    </div>
+
+    <h1 class="header-title text-title">Compras da semana</h1>
+  </header>
+  <main class="main margin">
+    <section class="add-items">
+      <form class="add-items-form">
+        <input
+          type="text"
+          name="text"
+          placeholder="Adicione um novo item"
+          required
+          class="add-items-input text-label"
+        >
+        <button type="submit" class="add-items-button">
+          Adicionar item
+        </button>
+      </form>
+    </section>
+
+    <section class="item-list-section">
+      <ul class="item-list">
+      </ul>
+    </section>
+  </main>
+
+  <script src="Script/script.js"></script>
+</body>
+</html>

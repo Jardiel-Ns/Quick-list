@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 22rem;
+
+  &-back {
+    margin-top: 2rem;
+  }
+
+  &-title {
+    margin-top: 1rem;
+    color: var(--content-primary);
+  }
+}
+
+.desktop-only {
+  margin-top: 2rem;
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .desktop-only {
+    display: initial;
+  }
+  .header {
+    width: 42rem;
+    .logo-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .header-back {
+      margin-top: 3.8rem;
+    }
+  }
+}
